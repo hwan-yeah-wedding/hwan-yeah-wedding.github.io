@@ -1,11 +1,21 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import Main from '../components/Main';
+import Invitation from '../components/Invitation';
+import Gallery from '../components/Gallery';
+import Location from '../components/Location';
+import Account from '../components/Account';
 import Layout from '../layouts/Layout.astro';
+
+import "../styles/global.css";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+	<Main/>
+	<Invitation />
+	<Gallery />
+	<Location />
+	<Account />
 </Layout>
