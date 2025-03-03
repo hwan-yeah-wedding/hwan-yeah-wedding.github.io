@@ -51,11 +51,6 @@ const Location = () => {
         observer.unobserve(ref.current);
       }
     };
-
-    // window.setTimeout(() => {
-    //   marker.setAnimation(null);
-    //   console.log(marker.getElement());
-    // }, 3000);
   }, []);
 
   useEffect(() => {}, []);
@@ -63,7 +58,12 @@ const Location = () => {
   return (
     <div className="w-screen h-screen bg-green-100 flex flex-col justify-center items-center">
       <span>Location</span>
-      <div ref={ref} id="map" className="w-50 h-50 border-1"></div>
+      <div
+        ref={ref}
+        id="map"
+        className="w-full"
+        style={{ height: "100vw" }}
+      ></div>
     </div>
   );
 };
