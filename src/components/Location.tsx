@@ -63,7 +63,7 @@ const Location = () => {
   return (
     <div className="w-screen h-screen bg-green-100 flex flex-col justify-center items-center">
       <span>Location</span>
-      <div ref={ref} id="map" className="w-100 h-100 border-1"></div>
+      <div ref={ref} id="map" className="w-50 h-50 border-1"></div>
     </div>
   );
 };
