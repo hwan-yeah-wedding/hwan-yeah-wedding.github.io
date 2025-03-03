@@ -1,1 +1,30 @@
 @import "tailwindcss";
+
+@theme {
+  --animate-rotate: rotateAnimation 2s linear infinite;
+  --animate-rotate-reverse: rotateAnimationReverse 2s linear infinite;
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes rotateAnimationReverse {
+  0% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
