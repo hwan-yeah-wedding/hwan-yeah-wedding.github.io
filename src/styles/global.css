@@ -11,6 +11,20 @@
   left: 22.37px;
 }
 
+.font-name {
+  font-family: Noto Sans KR;
+  font-weight: 700;
+  font-size: 18px;
+  color: #4d2511;
+}
+
+.font-normal {
+  font-family: Noto Sans KR;
+  font-weight: 350;
+  font-size: 16px;
+  color: #000000;
+}
+
 @theme {
   --animate-rotate: rotateAnimation 2s linear infinite;
   --animate-rotate-reverse: rotateAnimationReverse 2s linear infinite;
