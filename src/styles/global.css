@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+.bg-primary {
+  background-color: #fffbe1;
+}
+
+.image-bg {
+  width: 179px;
+  height: 349px;
+  top: 16px;
+  left: 22.37px;
+}
+
 @theme {
   --animate-rotate: rotateAnimation 2s linear infinite;
   --animate-rotate-reverse: rotateAnimationReverse 2s linear infinite;
