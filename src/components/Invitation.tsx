@@ -10,7 +10,13 @@ import arrow2 from "../assets/arrow2.png?url";
 const Invitation = () => {
   return (
     <div className="w-screen min-h-screen flex justify-center items-start">
-      <div className="bg-secondary w-full max-w-120 relative">
+      <div
+        className="bg-secondary w-full max-w-120 relative"
+        style={{
+          minWidth: "340px",
+          maxWidth: "390px",
+        }}
+      >
         <img
           src={flowers2}
           className="absolute w-full object-contain z-10 max-w-full top-30"
@@ -20,7 +26,7 @@ const Invitation = () => {
           }}
         />
         <div className="title relative flex flex-col items-center justify-start top-16">
-          <img src={invitation} className="title-h3" />
+          <img src={invitation} className="title-invitation" />
           <div className="relative w-25 h-25 mt-20">
             <img src={man} className="absolute z-10" />
             <img
@@ -77,7 +83,7 @@ const Invitation = () => {
             <span className="font-bold">서만근 ∙ 유승주</span> 의 아들{" "}
             <span className="font-bold">환수</span>
           </p>
-          <p className="font-normal mt-2 pb-10">
+          <p className="font-normal mt-2 pb-20">
             <span className="font-bold">채래문 ∙ 나희숙</span> &nbsp;의
             &nbsp;딸&nbsp; <span className="font-bold">예진</span>
           </p>
