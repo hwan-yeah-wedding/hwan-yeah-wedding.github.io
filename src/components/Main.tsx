@@ -2,13 +2,30 @@ import flowers from "../assets/flowers.png?url";
 import background from "../assets/background.png?url";
 import title from "../assets/title.png?url";
 import people from "../assets/people.png?url";
+import { useEffect, useState } from "react";
 
 const Main = () => {
+  const [initialHeight, setInitialHeight] = useState(700);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setInitialHeight(window.innerHeight);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div
       className="w-screen flex justify-center items-start"
       style={{
-        height: "95vh",
+        // height: "95vh",
+        height: `${initialHeight - 15}px`,
+        minHeight: "700px",
       }}
     >
       <div
@@ -46,14 +63,12 @@ const Main = () => {
           />
           <p className="font-name pt-2">환수 & 예진</p>
         </div>
-        <div className="info absolute flex flex-col items-center justify-center text-center bottom-15">
+        <div className="info absolute w-full flex flex-col items-center justify-center text-center bottom-15">
           <img
             src={people}
             className="z-20 w-full top-10 left-0 pr-11 pl-11"
             style={{
-              height: "50vh",
               minWidth: "180px",
-              minHeight: "350px",
             }}
           />
           <p className="font-normal pt-5">
