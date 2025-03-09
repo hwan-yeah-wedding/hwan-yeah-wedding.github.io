@@ -58,7 +58,7 @@ const Main = () => {
         <div className="info absolute w-full flex flex-col items-center justify-center text-center bottom-15">
           <img
             src={people}
-            className="z-20 w-auto top-10 left-0 pr-11 pl-11"
+            className="z-20 w-auto top-10 left-0 pr-11 pl-11 "
             ref={peopleRef}
             style={{
               minWidth: "180px",
