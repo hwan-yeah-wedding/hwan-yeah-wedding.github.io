@@ -11,7 +11,13 @@ const Main = () => {
         height: "95vh",
       }}
     >
-      <div className="bg-primary w-full h-full max-w-120 relative">
+      <div
+        className="bg-primary w-full h-full max-w-120 relative"
+        style={{
+          minWidth: "340px",
+          maxWidth: "390px",
+        }}
+      >
         <img
           src={flowers}
           alt="Main image"
@@ -45,6 +51,7 @@ const Main = () => {
             src={people}
             className="z-20 w-full top-10 left-0 pr-11 pl-11"
             style={{
+              height: "50vh",
               minWidth: "180px",
               minHeight: "350px",
             }}

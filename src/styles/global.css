@@ -29,9 +29,15 @@
   color: #000000;
 }
 
-.title-h3 {
+.title-invitation {
   /* 5.85 : 1 */
   width: 164px;
+  height: 28px;
+}
+
+.title-location {
+  /* 4.92 : 1 */
+  width: 138px;
   height: 28px;
 }
 
