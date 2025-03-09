@@ -2,37 +2,29 @@ import flowers from "../assets/flowers.png?url";
 import background from "../assets/background.png?url";
 import title from "../assets/title.png?url";
 import people from "../assets/people.png?url";
-import { useEffect, useState } from "react";
+import { useEffect, useRef } from "react";
 
 const Main = () => {
-  const [initialHeight, setInitialHeight] = useState(700);
+  const ref = useRef<HTMLDivElement>(null);
+  const peopleRef = useRef<HTMLImageElement>(null);
 
   useEffect(() => {
-    const handleResize = () => {
-      setInitialHeight(window.innerHeight);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
+    if (ref.current) {
+      ref.current.style.height = `${window.innerHeight}px`;
+    }
+    if (peopleRef.current) {
+      peopleRef.current.style.maxHeight = `${window.innerHeight / 2}px`;
+    }
   }, []);
 
   return (
-    <div
-      className="w-screen flex justify-center items-start"
-      style={{
-        // height: "95vh",
-        height: `${initialHeight - 15}px`,
-        minHeight: "700px",
-      }}
-    >
+    <div className="w-screen flex justify-center items-start">
       <div
-        className="bg-primary w-full h-full max-w-120 relative"
+        ref={ref}
+        className="bg-primary w-full max-w-120 relative"
         style={{
           minWidth: "340px",
-          maxWidth: "390px",
+          height: "100vh",
         }}
       >
         <img
@@ -66,9 +58,11 @@ const Main = () => {
         <div className="info absolute w-full flex flex-col items-center justify-center text-center bottom-15">
           <img
             src={people}
-            className="z-20 w-full top-10 left-0 pr-11 pl-11"
+            className="z-20 w-auto top-10 left-0 pr-11 pl-11"
+            ref={peopleRef}
             style={{
               minWidth: "180px",
+              maxHeight: "50vh",
             }}
           />
           <p className="font-normal pt-5">
