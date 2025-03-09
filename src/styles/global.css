@@ -4,6 +4,10 @@
   background-color: #fffbe1;
 }
 
+.bg-secondary {
+  background-color: #fffdf1;
+}
+
 .image-bg {
   width: 179px;
   height: 349px;
@@ -23,6 +27,25 @@
   font-weight: 350;
   font-size: 16px;
   color: #000000;
+}
+
+.title-h3 {
+  /* 5.85 : 1 */
+  width: 164px;
+  height: 28px;
+}
+
+.text-box {
+  /* 2.26 : 1 */
+  width: 340px;
+  height: 160px;
+  border-radius: 8px;
+  border-width: 1.4px;
+  padding: 13px;
+}
+
+p {
+  @apply font-normal;
 }
 
 @theme {

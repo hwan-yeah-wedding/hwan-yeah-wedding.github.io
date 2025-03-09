@@ -1,4 +1,3 @@
-import main from "../assets/main.png?url";
 import flowers from "../assets/flowers.png?url";
 import background from "../assets/background.png?url";
 import title from "../assets/title.png?url";
