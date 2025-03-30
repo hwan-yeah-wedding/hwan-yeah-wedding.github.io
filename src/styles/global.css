@@ -40,6 +40,11 @@
   width: 138px;
   height: 28px;
 }
+.title-gallery {
+  /* 3 : 1 */
+  width: 90px;
+  height: 28px;
+}
 
 .text-box {
   /* 2.26 : 1 */
