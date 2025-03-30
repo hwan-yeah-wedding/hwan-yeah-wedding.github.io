@@ -97,16 +97,14 @@ const Invitation = () => {
             </div>
             <div className="bg-primary text-box flex flex-col justify-center items-center mt-4 text-center z-10">
               <p className="mb-2">
-                성숙함과 귀여움을 모두 지닌 남자를 만났습니다.
+                <span className="font-bold text-wave">
+                  성숙하고도 귀여운 남자
+                </span>
+                를 만났습니다.
               </p>
-              <p className="mb-2">진지한 대화를 하다가도 그의 재치에</p>
-              <p className="mb-2">
-                결국 웃고 말지요. 그는 나를 가장 나답게 만드는
-              </p>
-              <p className="">
-                <span className="font-bold">소중한 존재</span>임을 알게
-                되었습니다.
-              </p>
+              <p className="mb-2">진지하다가도 그의 재치에 결국 웃고 말지요.</p>
+              <p className="mb-2">그는 나를 가장 나답게 만드는 존재임을</p>
+              <p className="">알게 되었습니다.</p>
             </div>
           </div>
           <div
@@ -127,15 +125,15 @@ const Invitation = () => {
               />
             </div>
             <div className="bg-primary text-box flex flex-col justify-center items-center mt-7 text-center z-10 ">
-              <p className="mb-2">마음이 따뜻한 여자를 만났습니다.</p>
+              <p className="mb-2">
+                <span className="font-bold text-wave">마음이 따뜻한 여자</span>
+                를 만났습니다.
+              </p>
               <p className="mb-2">
                 순수한 동심과 어우려져 무척이나 사랑스럽지요.
               </p>
               <p className="mb-2">그녀가 내 곁에서 웃는 게</p>
-              <p className="">
-                <span className="font-bold">가장 큰 행복</span>임을 알게
-                되었습니다.
-              </p>
+              <p className="">가장 큰 행복임을 알게 되었습니다.</p>
             </div>
           </div>
           <div

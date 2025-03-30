@@ -50,6 +50,13 @@
   padding: 13px;
 }
 
+.text-wave {
+  background-image: url(/src/assets/wave.png);
+  background-size: 146px 12px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
 p {
   @apply font-normal;
 }
