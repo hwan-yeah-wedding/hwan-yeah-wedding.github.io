@@ -44,7 +44,14 @@ const Account = () => {
         <div className="mt-13 flex items-center justify-center">
           <img src={contact} className="title-contact" />
         </div>
-        <div className="mb-13 mt-13">
+        <div className="text-center mt-12">
+          <p className="mb-2">정성 어린 마음 전해주시는 분들께 안내드립니다.</p>
+          <p className="mb-2">
+            아래 계좌로 마음을 전해주시면 감사히 받겠습니다.
+          </p>
+          <p className="mb-2">축하해 주셔서 진심으로 감사드립니다.</p>
+        </div>
+        <div className="mb-13 mt-12">
           <h2 className="text-[18px] text-[#4D2511] font-bold mb-2 ">
             신랑측 계좌번호
           </h2>
