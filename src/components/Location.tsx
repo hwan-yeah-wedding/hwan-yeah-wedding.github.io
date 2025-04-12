@@ -63,8 +63,8 @@ const Location = () => {
           id="map"
           className="w-full mt-13"
           style={{ height: "100vw" }}
-        ></div>
-        <div className="mt-13 p-4 ">
+        />
+        <div className="mt-5 mb-8 p-3 ">
           <div className="table w-full">
             <div className="table-row">
               <div className="table-cell p-2 font-bold">대중교통</div>
