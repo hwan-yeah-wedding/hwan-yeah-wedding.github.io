@@ -39,8 +39,8 @@ const Account = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-start justify-center">
-      <div className="bg-white w-full max-w-md p-6 ">
+    <div className="h-auto flex items-start justify-center">
+      <div className="bg-white w-full max-w-md p-6 mb-10">
         <div className="mt-13 flex items-center justify-center">
           <img src={contact} className="title-contact" />
         </div>
