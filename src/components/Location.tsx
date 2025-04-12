@@ -61,7 +61,7 @@ const Location = () => {
         <div
           ref={ref}
           id="map"
-          className="w-full mt-13"
+          className="w-full mt-15"
           style={{ height: "100vw" }}
         />
         <div className="mt-5 text-[#4D2511] font-bold text-[17px]">
@@ -82,12 +82,14 @@ const Location = () => {
                   ∙ 전용주차장{" "}
                   <span className="bg-parking px-2 py-1">2시간 무료</span>
                 </div>
-                <div className="ml-4">: 서울 양천구 오목로 344 청학빌딩</div>
-                <div className="mt-2">
+                <div className="ml-4 mt-1.5">
+                  : 서울 양천구 오목로 344 청학빌딩
+                </div>
+                <div className="mt-1.5">
                   ∙ 공영주차장{" "}
                   <span className="bg-parking px-2 py-1">3시간 무료</span>
                 </div>
-                <div className="ml-4">
+                <div className="ml-4 mt-1.5">
                   : 서울 양천구 목동동로 298 (도보 5분)
                 </div>
               </div>
