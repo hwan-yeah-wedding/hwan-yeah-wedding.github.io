@@ -1,5 +1,31 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "MaruBuri";
+  src: url("https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MaruBuri";
+  src: url("https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.woff")
+    format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+html,
+body {
+  font-family: "MaruBuri", sans-serif;
+  font-size: 15px;
+}
+
+p {
+  @apply font-normal;
+}
+
 .bg-primary {
   background-color: #fffbe1;
 }
@@ -16,16 +42,13 @@
 }
 
 .font-name {
-  font-family: Noto Sans KR;
   font-weight: 700;
   font-size: 18px;
   color: #4d2511;
 }
 
 .font-normal {
-  font-family: Noto Sans KR;
   font-weight: 350;
-  font-size: 16px;
   color: #000000;
 }
 
@@ -75,10 +98,6 @@
 
 .letter {
   letter-spacing: 1rem;
-}
-
-p {
-  @apply font-normal;
 }
 
 @theme {
