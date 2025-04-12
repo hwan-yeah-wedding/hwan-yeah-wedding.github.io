@@ -10,6 +10,8 @@ const Gallery = () => {
       gallery: "#wedding-photo",
       children: "a",
       pswpModule: () => import("photoswipe"),
+      maxZoomLevel: 1,
+      pinchToClose: false,
     });
     lightbox.init();
   }, []);
