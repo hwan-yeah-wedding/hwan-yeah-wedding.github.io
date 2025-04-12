@@ -49,7 +49,7 @@ const Gallery = () => {
                 <img
                   key={index}
                   src={imagePath}
-                  className="w-full h-35 bg-gray-300 rounded object-cover object-center"
+                  className="w-full h-40 bg-gray-300 rounded object-cover object-center"
                 />
               </a>
             );
