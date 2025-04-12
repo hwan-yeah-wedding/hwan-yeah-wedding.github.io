@@ -96,14 +96,14 @@ const Invitation = () => {
               />
             </div>
             <div className="bg-primary text-box flex flex-col justify-center items-center mt-4 text-center z-10">
-              <p className="mb-1">
-                <span className="font-bold text-wave">
+              <p className="mb-2">
+                <span className="font-bold text-wave text-[#4D2511]">
                   성숙하고도 귀여운 남자
                 </span>
                 를 만났습니다.
               </p>
-              <p className="mb-1">진지하다가도 그의 재치에 결국 웃고 말지요.</p>
-              <p className="mb-1">그는 나를 가장 나답게 만드는 존재임을</p>
+              <p className="mb-2">진지하다가도 그의 재치에 결국 웃고 말지요.</p>
+              <p className="mb-2">그는 나를 가장 나답게 만드는 존재임을</p>
               <p className="">알게 되었습니다.</p>
             </div>
           </div>
@@ -125,14 +125,16 @@ const Invitation = () => {
               />
             </div>
             <div className="bg-primary text-box flex flex-col justify-center items-center mt-7 text-center z-10 ">
-              <p className="mb-1">
-                <span className="font-bold text-wave">마음이 따뜻한 여자</span>
+              <p className="mb-2">
+                <span className="font-bold text-wave text-[#4D2511]">
+                  마음이 따뜻한 여자
+                </span>
                 를 만났습니다.
               </p>
-              <p className="mb-1">
+              <p className="mb-2">
                 순수한 동심과 어우려져 무척이나 사랑스럽지요.
               </p>
-              <p className="mb-1">그녀가 내 곁에서 웃는 게</p>
+              <p className="mb-2">그녀가 내 곁에서 웃는 게</p>
               <p className="">가장 큰 행복임을 알게 되었습니다.</p>
             </div>
           </div>
@@ -145,14 +147,14 @@ const Invitation = () => {
             <p className="font-normal mt-10">
               평생의 짝이 되어 같이 살아가기를 약속하고자 합니다.
             </p>
-            <p className="font-normal mt-1">
+            <p className="font-normal mt-2">
               이 설레는 시간에 소중한 분들을 마음 담아 초대합니다.
             </p>
             <p className="font-normal mt-10">
               <span className="font-bold">서만근 ∙ 유승주</span> 의 아들{" "}
               <span className="font-bold">환수</span>
             </p>
-            <p className="font-normal mt-1 pb-20">
+            <p className="font-normal mt-2 pb-20">
               <span className="font-bold">채래문 ∙ 나희숙</span> &nbsp;의
               &nbsp;딸&nbsp; <span className="font-bold">예진</span>
             </p>

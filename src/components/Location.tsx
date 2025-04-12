@@ -85,7 +85,7 @@ const Location = () => {
                 <div className="ml-4 mt-1.5">
                   : 서울 양천구 오목로 344 청학빌딩
                 </div>
-                <div className="mt-1.5">
+                <div className="mt-3">
                   ∙ 공영주차장{" "}
                   <span className="bg-parking px-2 py-1">3시간 무료</span>
                 </div>
