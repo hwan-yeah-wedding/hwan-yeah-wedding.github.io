@@ -32,9 +32,7 @@ const Gallery = () => {
           className="container mx-auto grid grid-cols-3 gap-2 px-2 pt-13 pb-2 md:grid-cols-3 z-10"
         >
           {new Array(15).fill(0).map((_, index) => {
-            const imagePath = `${
-              import.meta.env.BASE_URL
-            }src/assets/wedding/wedding-${index + 1}.jpg`;
+            const imagePath = `/wedding/wedding-${index + 1}.jpg`;
 
             const width = window.innerWidth;
             const height = Math.floor((window.innerWidth * 6600) / 4400);
