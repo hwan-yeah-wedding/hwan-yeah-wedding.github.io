@@ -1,6 +1,43 @@
 import contact from "../assets/contact.png?url";
 
+const manAccounts = [
+  {
+    name: "서환수",
+    bank: "우리은행",
+    account: "1002-650-368224",
+  },
+  {
+    name: "서만근",
+    bank: "농협은행",
+    account: "865-12-034276",
+  },
+];
+
+const womanAccounts = [
+  {
+    name: "채예진",
+    bank: "우리은행",
+    account: "1002-043-900493",
+  },
+  {
+    name: "채래문",
+    bank: "은행은행",
+    account: "0000-0000-0000",
+  },
+  {
+    name: "나희숙",
+    bank: "국민은행",
+    account: "253401-04-035966",
+  },
+];
+
 const Account = () => {
+  const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    const value = e.currentTarget.value;
+    navigator.clipboard.writeText(value);
+    alert("복사되었습니다.");
+  };
+
   return (
     <div className="min-h-screen flex items-start justify-center">
       <div className="bg-white w-full max-w-md p-6 ">
@@ -12,32 +49,25 @@ const Account = () => {
             신랑측 계좌번호
           </h2>
           <div className="table w-full">
-            <div className="table-row">
-              <div className="table-cell p-1 align-middle font-bold">
-                서환수
+            {manAccounts.map((account, index) => (
+              <div className="table-row" key={index}>
+                <div className="table-cell p-1 align-middle font-bold">
+                  {account.name}
+                </div>
+                <div className="table-cell p-1 align-middle">
+                  {account.bank.replace("은행", "")} {account.account}
+                </div>
+                <div className="table-cell p-1 align-middle">
+                  <button
+                    className="bg-parking px-3 py-1 rounded text-sm"
+                    value={`${account.bank} ${account.account}`}
+                    onClick={handleClick}
+                  >
+                    복사
+                  </button>
+                </div>
               </div>
-              <div className="table-cell p-1 align-middle">
-                은행 0000-000-000000
-              </div>
-              <div className="table-cell p-1 align-middle">
-                <button className="bg-parking px-3 py-1 rounded text-sm">
-                  복사
-                </button>
-              </div>
-            </div>
-            <div className="table-row">
-              <div className="table-cell p-1 align-middle font-bold">
-                서만근
-              </div>
-              <div className="table-cell p-1 align-middle">
-                은행 0000-000-000000
-              </div>
-              <div className="table-cell p-1 align-middle">
-                <button className="bg-parking px-3 py-1 rounded text-sm">
-                  복사
-                </button>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
 
@@ -46,45 +76,25 @@ const Account = () => {
             신부측 계좌번호
           </h2>
           <div className="table w-full">
-            <div className="table-row">
-              <div className="table-cell p-1 align-middle font-bold">
-                채예진
+            {womanAccounts.map((account, index) => (
+              <div className="table-row" key={index}>
+                <div className="table-cell p-1 align-middle font-bold">
+                  {account.name}
+                </div>
+                <div className="table-cell p-1 align-middle">
+                  {account.bank.replace("은행", "")} {account.account}
+                </div>
+                <div className="table-cell p-1 align-middle">
+                  <button
+                    className="bg-parking px-3 py-1 rounded text-sm"
+                    value={`${account.bank} ${account.account}`}
+                    onClick={handleClick}
+                  >
+                    복사
+                  </button>
+                </div>
               </div>
-              <div className="table-cell p-1 align-middle">
-                은행 0000-000-000000
-              </div>
-              <div className="table-cell p-1 align-middle">
-                <button className="bg-parking px-3 py-1 rounded text-sm">
-                  복사
-                </button>
-              </div>
-            </div>
-            <div className="table-row">
-              <div className="table-cell p-1 align-middle font-bold">
-                채래문
-              </div>
-              <div className="table-cell p-1 align-middle">
-                은행 0000-000-000000
-              </div>
-              <div className="table-cell p-1 align-middle">
-                <button className="bg-parking px-3 py-1 rounded text-sm">
-                  복사
-                </button>
-              </div>
-            </div>
-            <div className="table-row">
-              <div className="table-cell p-1 align-middle font-bold">
-                나희숙
-              </div>
-              <div className="table-cell p-1 align-middle">
-                은행 0000-000-000000
-              </div>
-              <div className="table-cell p-1 align-middle">
-                <button className="bg-parking px-3 py-1 rounded text-sm">
-                  복사
-                </button>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
