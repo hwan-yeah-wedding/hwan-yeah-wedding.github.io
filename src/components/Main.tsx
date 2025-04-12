@@ -63,6 +63,7 @@ const Main = () => {
             style={{
               minWidth: "180px",
               maxHeight: "50vh",
+              paddingLeft: "22px",
             }}
           />
           <p className="font-normal pt-5">
