@@ -64,10 +64,10 @@ const Location = () => {
           className="w-full mt-15"
           style={{ height: "100vw" }}
         />
-        <div className="mt-5 text-[#4D2511] font-bold text-[17px]">
+        <div className="mt-8 text-[#4D2511] font-bold text-[17px]">
           서울 양천구 오목로 344 청학빌딩 8층 메인홀
         </div>
-        <div className="mt-3 mb-8 p-3 ">
+        <div className="mt-2 mb-8 p-3 ">
           <div className="table w-full">
             <div className="table-row">
               <div className="table-cell p-2 font-bold">대중교통</div>
