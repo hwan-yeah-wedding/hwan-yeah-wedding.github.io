@@ -31,7 +31,7 @@ const Gallery = () => {
         </div>
         <div
           id="wedding-photo"
-          className="container mx-auto grid grid-cols-3 gap-2 px-2 pt-13 pb-2 md:grid-cols-3 z-10"
+          className="container mx-auto grid grid-cols-3 gap-2 px-2 pt-13 pb-2 md:grid-cols-3 z-10 mb-10"
         >
           {new Array(15).fill(0).map((_, index) => {
             const imagePath = `/gallery/wedding-${index + 1}.jpg`;
