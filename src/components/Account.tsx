@@ -21,8 +21,8 @@ const womanAccounts = [
   },
   {
     name: "채래문",
-    bank: "은행은행",
-    account: "0000-0000-0000",
+    bank: "국민은행",
+    account: "818701-00-185778",
   },
   {
     name: "나희숙",

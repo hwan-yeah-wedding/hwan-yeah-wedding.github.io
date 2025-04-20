@@ -45,6 +45,7 @@ const Gallery = () => {
                 data-pswp-width={width}
                 data-pswp-height={height}
                 target="_blank"
+                key={index}
               >
                 <img
                   key={index}
