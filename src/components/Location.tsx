@@ -65,7 +65,7 @@ const Location = () => {
           style={{ height: "100vw" }}
         />
         <div className="mt-8 text-[#4D2511] font-bold text-[17px]">
-          서울 양천구 오목로 344 청학빌딩 8층 메인홀
+          서울 양천구 오목로 344 청학빌딩 10층 메인홀
         </div>
         <div className="mt-2 mb-8 p-3 ">
           <div className="table w-full">

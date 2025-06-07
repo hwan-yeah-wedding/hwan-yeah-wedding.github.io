@@ -69,7 +69,7 @@ const Main = () => {
           <p className="font-normal pt-5">
             2025년 6월 7일 토요일 오후 6시 30분
           </p>
-          <p className="font-normal mt-2">로프트가든344 8층 메인홀</p>
+          <p className="font-normal mt-2">로프트가든344 10층 메인홀</p>
         </div>
       </div>
     </div>
